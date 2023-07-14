@@ -1,6 +1,5 @@
 import './bootstrap';
 import {createApp} from "vue";
+import  App from './pages/comments.vue';
 
-const app = createApp({
-
-}).mount("#app");
+createApp(App).mount("#app");
