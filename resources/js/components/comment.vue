@@ -40,7 +40,7 @@ export default {
 <template>
     <div class="bg-white p-2">
         <div class="d-flex flex-row user-info">
-            <img class="rounded-circle" :src="`https://i.pravatar.cc/${comment.id}`" width="40" alt="avatar">
+            <img class="rounded-circle" :src="`https://i.pravatar.cc/40?img=${comment.id}`" width="40" alt="avatar">
             <div class="d-flex flex-column justify-content-start ml-2"><span
                 class="d-block font-weight-bold name">{{ comment.user_name }}</span><span
                 class="date text-black-50">{{ comment.created_at }}</span></div>

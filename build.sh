@@ -8,8 +8,6 @@ cp .env.example .env
 
 SAIL="./vendor/bin/sail"
 
-$SAIL artisan key:generate
-
 printMessage "Building containers..."
 
 $SAIL up -d
@@ -21,6 +19,8 @@ $SAIL composer install
 printMessage "Running migrations..."
 
 $SAIL artisan migrate:refresh --seed
+
+$SAIL artisan key:generate
 
 printMessage "Running yarn install..."
 

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Services\CommentService\CommentService;
+use App\Http\Services\CommentService;
 use Exception;
-use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class CommentController extends Controller
